@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: Started checking the routes and confirmed that there was a route to POST a new toy, added a byebug to our "create" method, checked the params, then checked for sintax errors inside of our create method, and found an extra 's'.
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: Inspected error which was a SyntaxError (Unexpected end of JSON input), as I already know the error shouldn't be on our client site, I checked our update method and added a render json to get the communication with our db working.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: Inpected the error 404, checked the routes.rb and noticed that there was no delete route defined, deleted the "only" line and it worked
